@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="Author" content="Diego Melgar">
+    <meta name="description" content="Peliculas, series y un buen servicio de atencion para nuestros clientes">
+    <meta name="keywords" content="Peliculas, Series, Documentales">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/Inicio/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -14,83 +17,140 @@
             <nav >
                 <a href="#" class="active">Inicio</a>
                 <a href="#">Peliculas</a>
-                <a href="#">Series</a>
-                <a href="#">Documentales</a>
-                <a href="#">Mi lista</a>
+                <a href="#Series1">Series</a>
+                <a href="HTML/Registro.html">Registrar</a>
+                <a href="HTML/Inicio_sesion.html">Inicio Sesion</a>
+                <a href="HTML/Contacto.html">Contacto</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <div class="P-Principal">
-            <div class="contenedor">
-                <h3 class="titulo">Better Call Saul</h3>
-                <p class="Descripcion">
-                    Better Call Saul es una serie de televisión estadounidense creada por Vince Gilligan y Peter Gould. Se trata de un spin-off de Breaking Bad que consiste en una precuela de su historia. Situada en 2002, consiste en la vida del abogado James "Jimmy" McGill (Bob Odenkirk) siete años antes de su aparición como Saul Goodman en Breaking Bad. También se exploran eventos situados durante y después de Breaking Bad.
-                </p>
-            </div>
+		<div class="pelicula-principal">
+			<div class="contenedor">
+				<h3 class="titulo">Better Call Saul</h3>
+				<p class="descripcion">
+					Better Call Saul es una serie de televisión estadounidense de drama creada por Vince Gilligan y Peter Gould. Es una precuela y serie derivada de la serie anterior de Gilligan Breaking Bad. Ambientada entre principios y mediados de la década de los 2000, la serie sigue la historia de un estafador convertido recientemente en el abogado Jimmy McGill (interpretado por Bob Odenkirk), que comienza seis años antes de los eventos de Breaking Bad y muestra su transformación en la persona criminal Saul Goodman. McGill se convierte en el abogado del expolicía Mike Ehrmantraut (Jonathan Banks), cuyas habilidades le permiten ingresar al inframundo criminal del narcotráfico en Albuquerque (Nuevo México). El programa se estrenó en AMC el 8 de febrero de 2015 y se emitieron cinco temporadas hasta la fecha. Metflix emite la serie en varios países. Una sexta y última temporada está programada para emitirse en 2021.
+				</p>
+				<button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
+				<button role="button" class="boton"><i class="fas fa-info-circle"></i>Más información</button>
+			</div>
+		</div>
+
+		<div class="peliculas-recomendadas contenedor">
+			<div class="contenedor-titulo-controles">
+				<h3>Series Recomendadas</h3>
+				<div class="indicadores"></div>
+			</div>
+
+			<div id="Series1" class="contenedor-principal">
+				<button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+
+				<div class="contenedor-carousel">
+					<div class="carousel">
+						<div class="pelicula">
+							<a href="#"><img src="img/Series/Better-Call-Saul.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/Series/Casa-de-papel.jpeg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/Series/Dark.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/Series/Elite.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/Series/Games-of-Thrones.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/Series/Grey´s-Anatomy.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/Series/Hollywood.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/Series/Peaky-Blinders.jpeg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/Series/Riverdale.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/Series/Stranger-Things.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/Series/The-Walking-Dead.jpg" alt=""></a>
+						</div>
+					</div>
+				</div>
+
+				<button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+			</div>
         </div>
+        <br>
+        <div id="Serie1" class="peliculas-recomendadas contenedor">
+			<div class="contenedor-titulo-controles">
+				<h3>Series Recomendadas</h3>
+				<div class="indicadores"></div>
+			</div>
 
-       <div class="series-recomendadas">
-           <div class="contenedor-titulo">
-               <h3>Series</h3>
-           </div>
-           
-           <div class="content-principal">
-            <button role="button" class="flecha-iz"><i class="fas fa-arrow-left"></i></button>
+			<div id="Series1" class="contenedor-principal">
+				<button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
 
-            <div class="content-carrusel">
-                <div class="carousel">
-                    <div class="pelicula">
-                        <a href="#"><img src="./img/Series/13-Reasons-Why.jpg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="content-carrusel">
-                <div class="carousel">
-                    <div class="pelicula">
-                        <a href="#"><img src="./img/Series/Better-Call-Saul.jpg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="content-carrusel">
-                <div class="carousel">
-                    <div class="pelicula">
-                        <a href="#"><img src="./img/Series/Casa-de-papel.jpeg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="content-carrusel">
-                <div class="carousel">
-                    <div class="pelicula">
-                        <a href="#"><img src="./img/Series/Dark.jpg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="content-carrusel">
-                <div class="carousel">
-                    <div class="pelicula">
-                        <a href="#"><img src="./img/Series/Elite.jpg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="content-carrusel">
-                <div class="carousel">
-                    <div class="pelicula">
-                        <a href="#"><img src="./img/Series/Games-of-Thrones.jpg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-           
-            <button role="button" class="flecha-dr"><i class="fas fa-arrow-right"></i></button>
-            
+				<div class="contenedor-carousel">
+					<div class="carousel">
+						<div class="pelicula">
+                            <a href="#"><img src="img/Peliculas/Astronauta.jpg" alt=""></a>
+                            <p>Michael Forrest es un astronauta que debe hacer el viaje de regreso a la Tierra durante 3 años en completa soledad, después de que un trágico accidente impida la primera misión tripulada a explorar la vida en las lunas de Júpiter.</p>
+						</div>
+						<div class="pelicula">
+                            <a href="#"><img src="img/Peliculas/Avengers-Endgame.jpg" alt=""></a>
+                            <p>En 1987, Charlie, una adolescente, encuentra a Bumblebee, muy herido, en el depósito de chatarra al que había llegado mientras huía. Mientras lo restaura, Charlie percibe que lo que ha hallado no es un Volkswagen amarillo corriente.</p>
+						</div>
+						<div class="pelicula">
+                            <a href="#"><img src="img/Peliculas/Blood Shoot.jpg" alt=""></a>
+                            <p>Murray Ray Garrison es resucitado por un equipo de científicos. Mejorado con nanotecnología, se convierte en una máquina de matar biotecnológica sobrehumana. Cuando Ray entrena por primera vez con otros super soldados, no recuerda nada de su vida anterior.</p>
+						</div>
+						<div class="pelicula">
+                            <a href="#"><img src="img/Peliculas/Bumbolbid.jpg" alt=""></a>
+                            <p>Sexta entrega de la saga 'Transformers', esta vez centrada en el "hermano pequeño" de los Autobots, Bumblebee. Tratando de escapar, en el año 1987, Bumblebee encuentra refugio en un depósito de chatarra en una pequeña ciudad en la costa Californiana. Charlie (Hailee Steinfeld), a punto de cumplir 18 años y tratando de encontrar su lugar en el mundo, descubre a Bumblebee, dañado durante una batalla y descompuesto. Cuando Charlie lo revive, aprende rápidamente que éste no es un VW amarillo ordinario.</p>
+						</div>
+						<div class="pelicula">
+                            <a href="#"><img src="img/Peliculas/Gravity.jpg" alt=""></a>
+                            <p>En la Tierra se organiza un viaje cuyo fin es explorar varios planetas en busca de recursos minerales. Los astronautas de la expedición tendrán que vivir en el espacio durante seis años, pero todo está previsto para afrontar cualquier contratiempo que pudiera surgir.</p>
+						</div>
+						<div class="pelicula">
+                            <a href="#"><img src="img/Peliculas/joker.jpg" alt=""></a>
+                            <p>Arthur Fleck es un hombre ignorado por la sociedad, cuya motivación en la vida es hacer reír. Pero una serie de trágicos acontecimientos le llevarán a ver el mundo de otra forma. Película basada en Joker, el popular personaje de DC Comics y archivillano de Batman, pero que en este film toma un cariz más realista y oscuro.
+
+                                Todd Phillips</p>
+						</div>
+						<div class="pelicula">
+                            <a href="#"><img src="img/Peliculas/La Muete.jpg" alt=""></a>
+                            <p></p>
+						</div>
+						<div class="pelicula">
+                            <a href="#"><img src="img/Peliculas/Matirx.jpg" alt=""></a>
+                            <p>En la pacífica localidad de Centerville pasa algo raro. Los animales se empiezan a comportar de forma extraña, las horas de luz solar cambian de forma impredecible y la luna vigila permanentemente desde el horizonte. Los científicos están preocupados y los informativos dan noticias desconcertantes. Y es que, una extraña invasión está a punto de suceder en la que los muertos ya no está muertos y se levantarán de sus tumbas. Los habitantes de Centerville, liderados por Ronald Peterson y Cliff Robertson, deberán detener esta amenaza y luchar para sobrevivir.</p>
+						</div>
+						<div class="pelicula">
+                            <a href="#"><img src="img/Peliculas/Sonic.jpg" alt=""></a>
+                            <p>Sonic, el descarado erizo azul basado en la famosa serie de videojuegos de Sega, vivirá aventuras y desventuras cuando conoce a su amigo humano y policía, Tom Wachowski (James Marsden). Sonic y Tom unirán sus fuerzas para tratar de detener los planes del malvado Dr. Robotnik (Jim Carrey), que intenta atrapar a Sonic con el fin de emplear sus inmensos poderes para dominar el mundo.</p>
+						</div>
+					</div>
+				</div>
+
+				<button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+			</div>
         </div>
-
-       </div>
-    </main>
+        <br>
+        
+	</main>
+	
     
     <script src="https://kit.fontawesome.com/423bac3366.js" crossorigin="anonymous"></script>
-
+    <script src="js/main.js"></script>
+    
 
 </body>
 </html>
