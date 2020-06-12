@@ -99,6 +99,94 @@ header nav a.active{
     margin-right: 1.4em;
 }
 
+/* ----	-----	----- Contenedor Principal de series y arrow Recomendads	-----	-----*/
+.series-recomendadas . content-principal {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.series-recomendadas .content-principal .flecha-iz,
+.series-recomendadas .content-principal .flecha-dr{
+    position: absolute;
+    border: none;
+    background: rgb(0,0,0, .3);
+    font-size: 40px;
+    height: 50%;
+    top: calc(50% - 25%);
+    line-height: 40px;
+    width: 50px;
+    color: rgb(172, 172, 172);
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;
+}
+
+.series-recomendadas .content-principal .flecha-iz{
+    left: 0;
+}
+
+.series-recomendadas .content-principal .flecha-dr{
+    right: 0;
+}
+
+
+.series-recomendadas .content-principal .flecha-iz:hover,
+.series-recomendadas .content-principal .flecha-dr:hover{
+    background: rgb(0,0,0, .7);
+}
+
+/* ----	-----	----- Contenedor de titulo	-----	-----*/
+.contenedor-titulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.contenedor-titulo h3{
+    color: white;
+    font-size: 40px;
+}
+
+.contenedor-titulo .content-principal{
+    background: white;
+    height: 3px;
+    width: 10px;
+    cursor: pointer;
+    border: noen;
+    margin-right: 2px;
+}
+
+
+/* ----	-----	----- Carrusel Serie Recomendadas	-----	-----*/
+.series-recomendadas .content-carrusel{
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.series-recomendadas .content-carrusel .carousel{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.series-recomendadas .content-carrusel .carousel .pelicula{
+    width: 100%;
+    transition: .3s ease all;
+    box-shadow: 6px 6px 7px rgb(0,0,0, .50);
+}
+
+.series-recomendadas .content-carrusel .carousel .pelicula img{
+   width: 100%;
+   vertical-align: top;
+   
+}
+
+
+
+
+/* ----	-----	----- Media Query	-----	-----*/
 @media screen and (max-width: 900px){
     header .logo{
         margin-bottom: 10px;
@@ -112,5 +200,19 @@ header nav a.active{
 
     .P-Principal{
         font-size: 14px;
+    }
+
+    .content-principal .Descripcion{
+        max-width: 100%;
+    }
+
+    .series-recomendadas .content-carrusel{
+        overflow: visible;
+    }
+
+    .series-recomendadas .content-carrusel .carousel{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
     }
 }
