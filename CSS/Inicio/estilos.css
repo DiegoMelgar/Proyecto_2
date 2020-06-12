@@ -100,7 +100,7 @@ header nav a.active{
 }
 
 /* ----	-----	----- Contenedor Principal de series y arrow Recomendads	-----	-----*/
-.series-recomendadas . content-principal {
+.series-recomendadas .content-principal {
     display: flex;
     align-items: center;
     position: relative;
@@ -160,7 +160,7 @@ header nav a.active{
 
 /* ----	-----	----- Carrusel Serie Recomendadas	-----	-----*/
 .series-recomendadas .content-carrusel{
-    width: 100%;
+    width: 90%;
     padding: 20px 0;
     overflow: hidden;
     scroll-behavior: smooth;
@@ -180,7 +180,6 @@ header nav a.active{
 .series-recomendadas .content-carrusel .carousel .pelicula img{
    width: 100%;
    vertical-align: top;
-   
 }
 
 
