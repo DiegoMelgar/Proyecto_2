@@ -1,0 +1,116 @@
+:root{
+    --rojo: #E50914;
+    --fondo: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--fondo);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+
+.contenedor a{
+    font-size: 150%;
+}
+
+header{
+    padding: 1.5% 0;
+}
+
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    color: var(--rojo);
+    font-size: 500%;
+}
+
+header nav a{
+    color: #9b9a9a;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+header nav a:hover,
+header nav a.active{
+    color: hsl(0, 0%, 90%)
+}
+
+/* ----	-----	----- Pelicula Principal	-----	-----*/
+.P-Principal{
+    font-size: 16px;
+    min-height: 40.62em;
+    color:  rgb(201, 201, 204);
+    background:linear-gradient(rgb(0,0,0, .50) 0%, rgb(0,0, 0, .50) 100% ), url(../../img/Series/Better-Call-Saul.jpg);
+    background-position: center 5emm ;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: end;;
+}
+
+.P-Principal .contenedor{
+    margin: 0 auto;
+    margin-bottom: 6.25em;
+}
+
+.P-Principal .titulo{
+    font-weight: 600;
+    font-size: 3.12em;
+    margin-bottom: 0.4em;
+}
+
+.P-Principal .Descripcion{
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-bottom: 1.25em;
+}
+
+.P-Principal .boton {
+    background: rgb(0,0,0, .50);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    margin-right: 1em;
+    color: rgb(172, 172, 172);
+    cursor: pointer;
+    transition: .4s ease all;
+    font-size: 1.12em;
+}
+
+.P-Principal .boton i{
+    margin-right: 1.4em;
+}
+
+@media screen and (max-width: 900px){
+    header .logo{
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    header .contenedor{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .P-Principal{
+        font-size: 14px;
+    }
+}
