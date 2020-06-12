@@ -100,6 +100,10 @@ header nav a.active{
 }
 
 /* ----	-----	----- Contenedor Principal de series y arrow Recomendads	-----	-----*/
+.series-recomendadas{
+    margin-bottom: 70px;
+}
+
 .series-recomendadas .content-principal {
     display: flex;
     align-items: center;
@@ -145,10 +149,10 @@ header nav a.active{
 
 .contenedor-titulo h3{
     color: white;
-    font-size: 40px;
+    font-size: 30px;
 }
 
-.contenedor-titulo .content-principal{
+.contenedor-titulo .content-principal button{
     background: white;
     height: 3px;
     width: 10px;
@@ -157,10 +161,15 @@ header nav a.active{
     margin-right: 2px;
 }
 
+.contenedor-titulo .content-principal button:hover,
+.contenedor-titulo .content-principal button.activo{
+    background: red;
+}
+
 
 /* ----	-----	----- Carrusel Serie Recomendadas	-----	-----*/
 .series-recomendadas .content-carrusel{
-    width: 90%;
+    width: 100%;
     padding: 20px 0;
     overflow: hidden;
     scroll-behavior: smooth;
@@ -172,17 +181,20 @@ header nav a.active{
 }
 
 .series-recomendadas .content-carrusel .carousel .pelicula{
-    width: 100%;
+    min-width: 20%;
     transition: .3s ease all;
-    box-shadow: 6px 6px 7px rgb(0,0,0, .50);
+    box-shadow: 5px 5px 10px rgb(0,0,0, .3);
+}
+
+.series-recomendadas .content-carrusel .carousel .pelicula:hover{
+    transform:scale(1.2);
+    transform-origin: center ;
 }
 
 .series-recomendadas .content-carrusel .carousel .pelicula img{
-   width: 100%;
-   vertical-align: top;
+    width: 100%;
+    vertical-align: top;
 }
-
-
 
 
 /* ----	-----	----- Media Query	-----	-----*/
@@ -213,5 +225,9 @@ header nav a.active{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
+    }
+
+    .series-recomendadas .indicadores,.series-recomendadas .flecha-iz,.series-recomendadas .flecha-dr{
+        display: none;
     }
 }
