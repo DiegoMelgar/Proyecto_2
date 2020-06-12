@@ -1,233 +1,248 @@
-:root{
-    --rojo: #E50914;
-    --fondo: #141414;
+:root {
+  --rojo: #e50914;
+  --fondo: #141414;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: var(--fondo);
-    font-family: 'Open Sans', sans-serif;
+body {
+  background: var(--fondo);
+  font-family: "Open Sans", sans-serif;
 }
 
-.contenedor{
-    width: 90%;
-    margin: auto;
+.contenedor {
+  width: 90%;
+  margin: auto;
 }
 
-.contenedor a{
-    font-size: 150%;
+header {
+  padding: 30px 0;
 }
 
-header{
-    padding: 1.5% 0;
+header .contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-header .contenedor{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header .logo {
+  font-family: "Bebas Neue", cursive;
+  font-weight: normal;
+  color: var(--rojo);
+  font-size: 40px;
 }
 
-header .logo{
-    font-family: 'Bebas Neue', cursive;
-    font-weight: normal;
-    color: var(--rojo);
-    font-size: 500%;
+header nav a {
+  color: #aaa;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 1.26em;
 }
 
-header nav a{
-    color: #9b9a9a;
-    text-decoration: none;
-    margin-left: 20px;
+header nav a:hover {
+  color: rgb(119, 117, 117);
 }
 
-header nav a:hover,
-header nav a.active{
-    color: hsl(0, 0%, 90%)
+header nav a.active {
+  color: white;
 }
 
-/* ----	-----	----- Pelicula Principal	-----	-----*/
-.P-Principal{
-    font-size: 16px;
-    min-height: 40.62em;
-    color:  rgb(201, 201, 204);
-    background:linear-gradient(rgb(0,0,0, .50) 0%, rgb(0,0, 0, .50) 100% ), url(../../img/Series/Better-Call-Saul.jpg);
-    background-position: center 5emm ;
-    background-size: cover;
-    margin-bottom: 3.12em;
-    display: flex;
-    align-items: end;;
+/* ---- ----- ----- Pelicula Principal ----- ----- ----- */
+.pelicula-principal {
+  font-size: 15px;
+  min-height: 40.62em;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+    url(../../img/Series/Better-Call-Saul1.jpg);
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 3.12em;
+  display: flex;
+  align-items: end;
 }
 
-.P-Principal .contenedor{
-    margin: 0 auto;
-    margin-bottom: 6.25em;
+.pelicula-principal .contenedor {
+  margin: 0 auto;
+  margin-bottom: 6.25em;
 }
 
-.P-Principal .titulo{
-    font-weight: 600;
-    font-size: 3.12em;
-    margin-bottom: 0.4em;
+.pelicula-principal .titulo {
+  font-weight: 600;
+  font-size: 4em;
+  margin-bottom: 0.4em;
 }
 
-.P-Principal .Descripcion{
-    font-weight: normal;
-    font-size: 1em;
-    line-height: 1.75em;
-    max-width: 50%;
-    margin-bottom: 1.25em;
+.pelicula-principal .descripcion {
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.75em;
+  max-width: 50%;
+  margin-bottom: 1.25em;
 }
 
-.P-Principal .boton {
-    background: rgb(0,0,0, .50);
-    border: none;
-    border-radius: 0.31em;
-    padding: 0.93em 1.87em;
-    margin-right: 1em;
-    color: rgb(172, 172, 172);
-    cursor: pointer;
-    transition: .4s ease all;
-    font-size: 1.12em;
+.pelicula-principal .boton {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 0.31em;
+  padding: 0.93em 1.87em;
+  color: #fff;
+  margin-right: 1.25em;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  font-size: 1.12em;
 }
 
-.P-Principal .boton i{
-    margin-right: 1.4em;
+.pelicula-principal .boton:hover {
+  background: #fff;
+  color: #000;
 }
 
-/* ----	-----	----- Contenedor Principal de series y arrow Recomendads	-----	-----*/
-.series-recomendadas{
-    margin-bottom: 70px;
+.pelicula-principal .boton i {
+  margin-right: 1.25em;
 }
 
-.series-recomendadas .content-principal {
-    display: flex;
-    align-items: center;
-    position: relative;
+/* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
+.contenedor-titulo-controles {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
 }
 
-.series-recomendadas .content-principal .flecha-iz,
-.series-recomendadas .content-principal .flecha-dr{
-    position: absolute;
-    border: none;
-    background: rgb(0,0,0, .3);
-    font-size: 40px;
-    height: 50%;
-    top: calc(50% - 25%);
-    line-height: 40px;
-    width: 50px;
-    color: rgb(172, 172, 172);
-    cursor: pointer;
-    z-index: 500;
-    transition: .2s ease all;
+.contenedor-titulo-controles h3 {
+  color: #fff;
+  font-size: 30px;
 }
 
-.series-recomendadas .content-principal .flecha-iz{
-    left: 0;
+.contenedor-titulo-controles .indicadores button {
+  background: #fff;
+  height: 3px;
+  width: 10px;
+  cursor: pointer;
+  border: none;
+  margin-right: 2px;
 }
 
-.series-recomendadas .content-principal .flecha-dr{
-    right: 0;
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button.activo {
+  background: red;
 }
 
-
-.series-recomendadas .content-principal .flecha-iz:hover,
-.series-recomendadas .content-principal .flecha-dr:hover{
-    background: rgb(0,0,0, .7);
+/* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
+.peliculas-recomendadas {
+  margin-bottom: 70px;
 }
 
-/* ----	-----	----- Contenedor de titulo	-----	-----*/
-.contenedor-titulo{
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
+.peliculas-recomendadas .contenedor-principal {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
-.contenedor-titulo h3{
-    color: white;
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+  position: absolute;
+  border: none;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 40px;
+  height: 50%;
+  top: calc(50% - 25%);
+  line-height: 40px;
+  width: 50px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 500;
+  transition: 0.2s ease all;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda:hover,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda {
+  left: 0;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+  right: 0;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula p {
+  display: none;
+}
+/* ---- ----- ----- Carousel ----- ----- ----- */
+.peliculas-recomendadas .contenedor-carousel {
+  width: 100%;
+  padding: 20px 0;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
+  min-width: 20%;
+  transition: 0.3s ease all;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula.hover {
+  transform: scale(1.2);
+  transform-origin: center;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula:hover p {
+  display: block;
+  overflow: auto;
+  z-index: 600;
+  box-shadow: none;
+}
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+  header .logotipo {
+    margin-bottom: 10px;
     font-size: 30px;
-}
+  }
 
-.contenedor-titulo .content-principal button{
-    background: white;
-    height: 3px;
-    width: 10px;
-    cursor: pointer;
-    border: noen;
-    margin-right: 2px;
-}
+  header .contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
 
-.contenedor-titulo .content-principal button:hover,
-.contenedor-titulo .content-principal button.activo{
-    background: red;
-}
+  .pelicula-principal {
+    font-size: 14px;
+  }
 
+  .pelicula-principal .descripcion {
+    max-width: 100%;
+  }
 
-/* ----	-----	----- Carrusel Serie Recomendadas	-----	-----*/
-.series-recomendadas .content-carrusel{
-    width: 100%;
-    padding: 20px 0;
-    overflow: hidden;
-    scroll-behavior: smooth;
-}
+  .peliculas-recomendadas .contenedor-carousel {
+    overflow: visible;
+  }
 
-.series-recomendadas .content-carrusel .carousel{
-    display: flex;
-    flex-wrap: nowrap;
-}
+  .peliculas-recomendadas .contenedor-carousel .carousel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
 
-.series-recomendadas .content-carrusel .carousel .pelicula{
-    min-width: 20%;
-    transition: .3s ease all;
-    box-shadow: 5px 5px 10px rgb(0,0,0, .3);
-}
-
-.series-recomendadas .content-carrusel .carousel .pelicula:hover{
-    transform:scale(1.2);
-    transform-origin: center ;
-}
-
-.series-recomendadas .content-carrusel .carousel .pelicula img{
-    width: 100%;
-    vertical-align: top;
-}
-
-
-/* ----	-----	----- Media Query	-----	-----*/
-@media screen and (max-width: 900px){
-    header .logo{
-        margin-bottom: 10px;
-        font-size: 30px;
-    }
-
-    header .contenedor{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .P-Principal{
-        font-size: 14px;
-    }
-
-    .content-principal .Descripcion{
-        max-width: 100%;
-    }
-
-    .series-recomendadas .content-carrusel{
-        overflow: visible;
-    }
-
-    .series-recomendadas .content-carrusel .carousel{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-    }
-
-    .series-recomendadas .indicadores,.series-recomendadas .flecha-iz,.series-recomendadas .flecha-dr{
-        display: none;
-    }
+  .peliculas-recomendadas .indicadores,
+  .peliculas-recomendadas .flecha-izquierda,
+  .peliculas-recomendadas .flecha-derecha {
+    display: none;
+  }
 }
