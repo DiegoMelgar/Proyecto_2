@@ -173,6 +173,7 @@ header nav a.active {
 
 .peliculas-recomendadas .contenedor-carousel .carousel .pelicula p {
   display: none;
+ overflow: auto;
 }
 /* ---- ----- ----- Carousel ----- ----- ----- */
 .peliculas-recomendadas .contenedor-carousel {

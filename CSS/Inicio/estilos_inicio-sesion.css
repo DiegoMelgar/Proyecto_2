@@ -1,0 +1,118 @@
+:root {
+  --let: rgb(251, 248, 248);
+  --bla: rgb(0, 5, 5, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../../img/Fondo_Formulario_registro.jpg);
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/*
+body::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.639);
+
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+*/
+form {
+  width: 30%;
+  margin: 13% auto;
+  border-radius: 20px;
+  border: solid 5px var(--bla);
+  background-color: rgba(0, 0, 0, 0.4);
+  animation-name: logo;
+  animation-duration: 3s;
+  display: block;
+  animation-name: formu;
+  animation-duration: 2s;
+}
+
+form legend {
+  text-align: center;
+}
+
+#logo {
+  width: 15%;
+  animation-name: logo;
+  animation-duration: 2s;
+}
+
+
+.Inputs-content input {
+    width: 90%;
+    background-color: var(--bla);
+    border: none;
+    border-radius: 3px;
+    padding: 12px;
+    margin-left: 10px;
+}
+
+form input,
+::placeholder {
+  color: var(--let);
+  font-size: 1.25rem;
+}
+
+.Inputs-content,
+label {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  margin-left: 1%;
+}
+
+.Inputs-content label,
+p {
+  font-size: 2rem;
+  color: var(--let);
+}
+
+input[type=submit]{
+    width: 90%;
+    margin-top: 3%;
+    margin-left:4%;
+    margin-bottom: 2%;
+    padding: 2%;
+    background:transparent;
+    border: none;
+}
+
+input[type=submit]:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.53);
+    border-radius: 15px;
+}
+
+/* ----	-----	----- KeyFrame	-----	-----*/
+@keyframes logo {
+    0%{
+      background: none;
+      width: 50%;
+      margin-top: 5%;
+    }
+  
+    100%{
+      opacity: 1;
+    }
+  }
+  @keyframes formu{
+    0%{
+      display: none;
+      opacity: 0;
+    } 
+  } 
