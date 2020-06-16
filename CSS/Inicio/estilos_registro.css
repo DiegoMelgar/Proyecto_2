@@ -20,7 +20,7 @@ body {
 
 form {
   width: 30%;
-  margin: 12% auto;
+  margin: 10% auto;
   border-radius: 20px;
   border: solid 5px var(--bla);
   background-color: rgba(0, 0, 0, 0.4);
@@ -69,21 +69,41 @@ img {
 
 .Botones {
   margin: 3%;
-  margin-left: 70%;
+  margin-left: 20%;
 }
+
 
 .Inputs-btn {
   color: var(--hat);
-  padding: 8% 5%;
+  padding: 4% 4%;
   border: none;
   background-color: transparent;
-  font-size: 1.125rem;
+  font-size: 1.13rem;
+  display: inline;
+  position: relative;
+  left: 57%;
 }
 
 .Inputs-btn:hover {
   background-color: var(--bla);
   cursor: pointer;
   border-radius: 10px;
+}
+
+.text-btn a {
+ background-color: none;
+ font-size: 1.2rem;
+ text-decoration: none;
+ color:rgb(4, 143, 145);;
+ position: absolute;
+ top: 70%;
+ left: 0px;
+ right: 0px;
+}
+
+.text-btn:hover{
+  color:rgb(4, 143, 145);
+  cursor: pointer;
 }
 
 /* ----	-----	----- Media Queri	-----	-----*/
@@ -109,7 +129,6 @@ img {
   form {
     margin: 32% auto;
     width: 80%;
-    font-size: 20px;
   }
   .Botones {
     margin-left: 75%;
@@ -134,10 +153,8 @@ img {
 
   form {
     margin: 25% auto;
-    width: 50%;
-    font-size: 1.25em;
   }
   .Botones {
-    margin-left: 78.5%;
+    margin-left: 65%;
   }
 }
