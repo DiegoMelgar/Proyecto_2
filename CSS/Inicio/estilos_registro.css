@@ -1,52 +1,143 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background: url();
-    color: white;
+:root {
+  --hat: rgba(204, 202, 202, 0.993);
+  --bla: rgb(0, 5, 5, 0.5);
 }
 
-form{
-    width: 20%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.Inputs{
-    width:90%;
-    padding-left:20px;
-    margin-top: 6%;
+body {
+  background-image: url(../../img/Fondo_Formulario_registro.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #6699;
 }
 
-.Inputs-opc{
-    width: 100%;
-    padding: 1%;
+form {
+  width: 30%;
+  margin: 12% auto;
+  border-radius: 20px;
+  border: solid 5px var(--bla);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-.Inputs-btn{
-    padding: 4% 6%;
-    border-radius: 10%;
-    border: none;
-    background: none;
+form p,label{
+  font-size: 2rem;
+  color: var(--hat);
 }
 
-.Inputs-btn:hover{
-    color: white;
+#logo {
+  width: 10%;
+}
+.Inputs {
+  margin-top: 3%;
 }
 
-.Inputs-btn-r{
-    padding: 4% 6%;
-    border-radius: 10%;
-    border: none;
-    background: none;
+.Inputs input {
+  width: 90%;
+  background-color: var(--bla);
+  border: none;
+  border-radius: 3px;
+  padding: 12px;
+  margin-left: 10px;
 }
 
-.Inputs-btn-r:hover{
-    color: white;
+form 
+input,
+label,
+::placeholder {
+  color: var(--hat);
+  font-size: 1rem;
 }
 
-.Botones{
-    margin-top: 2%;
-    margin-bottom: 3%;
-    margin-left: 60%;
+form ,
+input,
+label {
+  padding-left: 10px;
+}
+
+form legend,
+p,
+img {
+  text-align: center;
+}
+
+.Botones {
+  margin: 3%;
+  margin-left: 70%;
+}
+
+.Inputs-btn {
+  color: var(--hat);
+  padding: 8% 5%;
+  border: none;
+  background-color: transparent;
+  font-size: 1.125rem;
+}
+
+.Inputs-btn:hover {
+  background-color: var(--bla);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* ----	-----	----- Media Queri	-----	-----*/
+@media screen and (min-width: 360px) and (max-width: 760px) {
+  body {
+    background-image: url(../../img/Fondo_Formulario_registro.jpg);
+  }
+
+  form {
+    margin: 30% auto;
+    width: 80%;
+    font-size: 20px;
+  }
+  .Botones {
+    margin-left: 58%;
+  }
+}
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+  body {
+    background-image: url(../../img/Fondo_Formulario_registro.jpg);
+  }
+
+  form {
+    margin: 32% auto;
+    width: 80%;
+    font-size: 20px;
+  }
+  .Botones {
+    margin-left: 75%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1736px) {
+  body {
+    background-image: url(../../img/Fondo_Formulario_registro.jpg);
+  }
+
+  form {
+    margin: 40% auto;
+    width: 70%;
+    font-size: 1.25em;
+  }
+}
+@media screen and (max-width: 1736px) {
+  body {
+    background-image: url(../../img/Fondo_Formulario_registro.jpg);
+  }
+
+  form {
+    margin: 25% auto;
+    width: 50%;
+    font-size: 1.25em;
+  }
+  .Botones {
+    margin-left: 78.5%;
+  }
 }
