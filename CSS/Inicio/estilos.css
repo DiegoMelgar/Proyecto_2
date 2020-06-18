@@ -10,7 +10,7 @@
 }
 
 body {
-  background: var(--fondo);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(21, 52, 52));
   font-family: "Open Sans", sans-serif;
 }
 
@@ -21,6 +21,7 @@ body {
 
 header {
   padding: 30px 0;
+  background-color: rgb(49, 73, 93);
 }
 
 header .contenedor {
@@ -44,7 +45,7 @@ header nav a {
 }
 
 header nav a:hover {
-  color: rgb(119, 117, 117);
+  color: rgb(44, 43, 43);
 }
 
 header nav a.active {
@@ -54,13 +55,13 @@ header nav a.active {
 /* ---- ----- ----- Pelicula Principal ----- ----- ----- */
 .pelicula-principal {
   font-size: 15px;
-  min-height: 40.62em;
+  min-height: 50em;
   color: #fff;
   background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
     url(../../img/Series/Better-Call-Saul1.jpg);
-  background-position: center center;
+  background-position: top center;
   background-size: cover;
-  margin-bottom: 3.12em;
+  margin-bottom: 1em;
   display: flex;
   align-items: end;
 }
@@ -113,12 +114,12 @@ header nav a.active {
 }
 
 .contenedor-titulo-controles h3 {
-  color: #fff;
+  color: rgb(44, 43, 43);
   font-size: 30px;
 }
 
 .contenedor-titulo-controles .indicadores button {
-  background: #fff;
+  background: rgb(44, 43, 43);
   height: 3px;
   width: 10px;
   cursor: pointer;
@@ -146,7 +147,7 @@ header nav a.active {
 .peliculas-recomendadas .contenedor-principal .flecha-derecha {
   position: absolute;
   border: none;
-  background: rgba(0, 0, 0, 0.3);
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(21, 52, 52));
   font-size: 40px;
   height: 50%;
   top: calc(50% - 25%);

@@ -1,0 +1,287 @@
+:root {
+  --fondo-table: #313129;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(21, 52, 52));
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.Content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill minmax(10px 360px) (3 1fr));
+  grid-template-rows: repeat(auto-fill minmax(10px 10px) (31fr));
+  gap: 1em;
+  width: 100%;
+}
+
+.Content img {
+  box-shadow: -1px 7px 51px 0px rgba(199, 127, 199, 0.59);
+}
+
+header {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  padding: 3%;
+  margin-left: 25%;
+  margin-right: 0%;
+  color: #e6e3e3;
+  font-size: 5rem;
+  text-shadow: 7px -3px 15px rgba(255, 110, 166, 0.84);
+  display: inline-block;
+}
+
+.btn {
+  background: transparent;
+  margin: 3%;
+  margin-left: 7%;
+  border-radius: 100px;
+  border: none;
+}
+
+.btn a {
+  padding: 30px;
+  font-size: 1.85rem;
+  text-decoration: none;
+  color: rgb(34, 32, 32);
+}
+
+.btn a:hover {
+  background-color: rgba(0, 0, 0, 0.272);
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+/* ----	-----	----- Style Better Call Saul	-----	-----*/
+.Better-Call-Saul {
+  grid-column: 1;
+  grid-row: 1;
+  margin-left: 5%;
+  width:57%;
+  text-align: justify;
+  color: white;
+}
+
+.Better-Call-Saul h2 {
+  font-weight: bolder;
+  text-align: center;
+}
+
+table th,
+td {
+  padding-left: 5px;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+table tr:nth-child(2n + 1) {
+  background-color: var(--fondo-table);
+}
+
+.content-Saul {
+  display: none;
+}
+
+.better-content:hover .content-Saul {
+  line-height: 2em;
+  overflow: hidden;
+  display: inline-block;
+  animation-name: info;
+  animation-duration: 3s;
+}
+
+/* ----	-----	----- Style Casa de papel	-----	-----*/
+
+.Casa-de-papel {
+  grid-column: 2;
+  grid-row: 1;
+  width:57%;
+  text-align: justify;
+  color: white;
+}
+
+.Casa-de-papel h2 {
+  text-align: center;
+  font-weight: bolder;
+}
+
+table th,
+td {
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+  margin-left: 20%;
+}
+
+table tr:nth-child(even) {
+  background-color: var(--fondo-table);
+}
+
+.content-paper-house {
+  display: none;
+}
+
+.Paper-House-content:hover .content-paper-house {
+  line-height: 2em;
+  display: block;
+  animation-name: info;
+  animation-duration: 3s;
+}
+
+/* ----	-----	-----  Style Dark	-----	-----*/
+.Dark {
+  grid-row: 1;
+  grid-column: 3;
+  width:57%;
+  text-align: justify;
+  color: white;
+}
+
+.Dark h2 {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.Dark img {
+  width: 600px;
+}
+
+table th,
+td {
+  padding-left: 5px;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+table tr:nth-child(even) {
+  background-color: var(--fondo-table);
+}
+
+.Content-dark {
+  display: none;
+}
+
+.Dark-content:hover .Content-dark {
+  line-height: 2em;
+  display: block;
+  animation-name: info;
+  animation-duration: 3s;
+}
+
+/* ----	-----	----- Elite	-----	-----*/
+.Elite {
+  grid-row: 2;
+  grid-column: 1;
+  margin-left: 5%;
+  width:57%;
+  text-align: justify;
+  color: white;
+}
+
+.Elite h2 {
+  text-align: center;
+}
+
+table {
+  width: auto;
+  align-items: center;
+}
+
+table th,
+td {
+  padding-left: 5px;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+table tr:nth-child(even) {
+  background-color: var(--fondo-table);
+}
+
+.Content-elite {
+  display: none;
+}
+
+.Elite-content:hover .Content-elite {
+  line-height: 2em;
+  display: block;
+  animation-name: info;
+  animation-duration: 3s;
+}
+
+/* ----	-----	-----  Game of Thrones	-----	-----*/
+.Games-of-Thrones {
+  grid-row: 2;
+  grid-column: 2;
+  width:57%;
+  text-align: justify;
+  color: white;
+}
+
+.Games-of-Thrones h2 {
+  text-align: center;
+}
+
+.Content-games {
+  display: none;
+}
+
+.Games-content:hover .Content-games {
+  line-height: 2em;
+  display: block;
+  animation-name: info;
+  animation-duration: 3s;
+}
+
+/* ----	-----	----- Grey´s Anatomy	-----	-----*/
+.Greys-Anatomy {
+  grid-row: 2;
+  grid-column: 3;
+  width:57%;
+  text-align: justify;
+  color: white;
+}
+
+.Greys-Anatomy h2 {
+  text-align: center;
+}
+
+.Content-Grey {
+  display: none;
+}
+
+.Grey-content:hover .Content-Grey {
+  display: block;
+  line-height: 2em;
+  animation-name: info;
+  animation-duration: 3s;
+}
+
+/* ----	-----	----- Animaciones	-----	-----*/
+@keyframes info {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -27,13 +27,13 @@
   }
   
   .dropdown-content a:hover {
-    background-color: rgb(96, 95, 95);
+    background-color:rgb(44, 43, 43);
     width: 150px;
     color: white;
   }
   
   .dropdown:hover .dropdown-btn {
-    color: rgb(119, 117, 117);
+    color: rgb(44, 43, 43);
   }
   
   .dropdown:hover .dropdown-content {
