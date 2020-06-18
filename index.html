@@ -6,7 +6,8 @@
     <meta name="description" content="Peliculas, series y un buen servicio de atencion para nuestros clientes">
     <meta name="keywords" content="Peliculas, Series, Documentales">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/Inicio/estilos.css">
+	<link rel="stylesheet" href="CSS/Inicio/estilos.css">
+	<link rel="stylesheet" href="./CSS/Inicio/dropdown.css">
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <title>Menflix</title>
 </head>
@@ -15,9 +16,14 @@
         <div class="contenedor">
             <h2 class="logo">Menflix</h2>
             <nav >
-                <a href="#" class="active">Inicio</a>
-                <a href="#">Peliculas</a>
-                <a href="#Series1">Series</a>
+				<a href="#" class="active">Inicio</a>
+				<div class="dropdown">
+					<p class="dropdown-btn">Contenido</p>
+					<div class="dropdown-content">
+						<ol><a href="#">Peliculas</a></ol>
+						<ol><a href="#Series1">Series</a></ol>
+					</div>
+				</div>
                 <a href="HTML/Registro.html">Registrar</a>
                 <a href="HTML/Inicio_sesion.html">Inicio Sesion</a>
                 <a href="HTML/Contacto.html">Contacto</a>
