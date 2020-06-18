@@ -175,9 +175,13 @@ img {
   }
 
   form {
-    margin: 10% auto;
-    width: 70%;
+    margin: 8% auto;
+    width: 50%;
     font-size: 1.25em;
+  }
+
+  .Botones {
+    margin-left: -1%;
   }
 }
 @media screen and (min-width: 1737px) and  (max-width: 2700px)  {
@@ -186,6 +190,6 @@ img {
   }
 
   form {
-    margin: 10% auto;
+    margin: 8% auto;
   }
 }

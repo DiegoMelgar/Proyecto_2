@@ -31,7 +31,7 @@ body::before{
 }
 */
 form {
-  width: 60%;
+  width: 40%;
   margin: 8% auto;
   border-radius: 20px;
   border: solid 5px var(--bla);
@@ -62,7 +62,7 @@ form legend {
 
 
 .Inputs-content input {
-    width: 100%;
+    width: 90%;
     background-color: var(--bla);
     border: none;
     border-radius: 3px;
@@ -172,9 +172,21 @@ input[type=submit]:hover{
   }
 
   form {
-    margin: 8% auto;
-    width: 70%;
+    margin: 4% auto;
+    width: 50%;
     font-size: 1.25em;
+  }
+  .Inputs-content label, p{
+    font-size: 1.25rem;
+    margin-left: 2%;
+  }
+
+  ::placeholder{
+    font-size: .9rem;
+  }
+
+  #Link-register,a{
+    font-size: 1.1rem;
   }
 }
 
@@ -184,7 +196,7 @@ input[type=submit]:hover{
   }
 
   form {
-    margin: 8% auto;
+    margin: 10% auto;
   }
 }
 
